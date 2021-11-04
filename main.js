@@ -21,10 +21,9 @@ function getChange(amountDue, amountRecieved) {
     remainder = remainder - nickels * 05;
     document.getElementById("nickels-output").innerHTML = nickels;
 
-
     var pennies = Math.round(remainder);
     document.getElementById("pennies-output").innerHTML = pennies;
 
 }
 
-document.getElementById("calculate-change").onclick = function () { getChange() };
+document.getElementById("calculate-change").onclick = function() { getChange() };
